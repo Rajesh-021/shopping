@@ -54,7 +54,7 @@ document.querySelector("main").innerHTML="";
                                     <dd ><span class="bi bi-star-fill text-warning"></span>${products.rating.rate}[${products.rating.count}]
                             </div>
                             <div class="card-footer">
-                             <button class="btn btn-primary w-100" onclick="addCart(${products.id})">   cart </button>
+                             <button class="btn btn-primary w-100 bi bi-cart" onclick="addCart(${products.id})">   cart </button>
                             </div>`
 
                    document.querySelector("main").appendChild(div);         
@@ -135,7 +135,7 @@ document.querySelector("main").innerHTML="";
 
        </main>
        <article class="col-3">
-        <button class="btn btn-info w-100 p-2 bi bi-cart" onclick="showcart()" data-bs-toggle="modal" data-bs-target="#showcart">[<span id="lblId"></span>] Cart</button>
+        <button class="btn btn-info w-100 p-2 bi bi-cart" onclick="showcart()" data-bs-toggle="modal" data-bs-target="#showcart">[<span id="lblId"></span>] Cart Items</button>
 
           <div class="modal" id="showcart">
             <div class="modal-dialog">
